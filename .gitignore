@@ -9,4 +9,8 @@ target
 __using_assets__
 __new__
 *.exe
+*.o
+*.gch
+*.pdb
 *.class
+test.*

@@ -5,8 +5,7 @@ public class Main {
         int answer = 0;
         str = str.toLowerCase();
         t = Character.toLowerCase(t);
-        int str_len = str.length();
-        for (int i = 0; i < str_len; i++) {
+        for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == t) answer++;
         }
         return answer;
