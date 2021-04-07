@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
     public static int solution(String str, char t) {
         int answer = 0;
         str = str.toLowerCase();
         t = Character.toLowerCase(t);
-        int str_len = str.length();
-        for (int i = 0; i < str_len; i++) {
-            if (str.charAt(i) == t) answer++;
+        // 향상된 for문 사용
+        for (char s : str.toCharArray()) {
+            if (s == t) answer++;
         }
         return answer;
     }
