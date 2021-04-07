@@ -1,0 +1,12 @@
+.DS_Store
+.vscode
+node_modules
+vendor
+dist
+.idea
+out
+target
+__using_assets__
+__new__
+*.exe
+*.class
