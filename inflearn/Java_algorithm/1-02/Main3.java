@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main3 {
     public static String solution(String str) {
@@ -14,8 +14,8 @@ public class Main3 {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String input = in.next();
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
 
         System.out.println(solution(input));
     }

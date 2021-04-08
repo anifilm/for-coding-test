@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static int solution(String str, char t) {
@@ -12,9 +12,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String input1 = in.next();
-        char input2 = in.next().charAt(0);
+        Scanner sc = new Scanner(System.in);
+        String input1 = sc.next();
+        char input2 = sc.next().charAt(0);
 
         System.out.println(solution(input1, input2));
     }
