@@ -8,11 +8,13 @@ class Solution {
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i + 1; j < numbers.length; j++) {
                 int r = numbers[i] + numbers[j];
+                // 중복이 없다면 ArrayList에 추가
                 if (!resultList.contains(r)) resultList.add(r);
             }
         }
+        // ArrayList sort
         Collections.sort(resultList);
-
+        // ArrayList to Array (Integer -> int type)
         answer = resultList.stream().mapToInt(i->i).toArray();
         return answer;
     }

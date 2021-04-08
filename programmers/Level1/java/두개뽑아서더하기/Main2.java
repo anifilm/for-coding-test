@@ -3,8 +3,9 @@ import java.util.*;
 class Solution {
     public ArrayList<Integer> solution(int[] numbers) {
         ArrayList<Integer> answer = new ArrayList<>();
-        for (int i = 0; i < numbers.length; i++) {
-            for (int j = i + 1; j < numbers.length; j++) {
+        int len = numbers.length; // 이게 더 빠르다
+        for (int i = 0; i < len; i++) {
+            for (int j = i + 1; j < len; j++) {
                 int r = numbers[i] + numbers[j];
                 if (!answer.contains(r)) answer.add(r);
             }
