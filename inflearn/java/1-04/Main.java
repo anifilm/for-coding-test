@@ -1,16 +1,21 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static String solution(String str) {
         String answer = "";
-
+        int len = str.length() - 1;
+        for (int i = len; i >= 0; i--)
+            answer += str.charAt(i);
         return answer;
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String input = in.next();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
-        System.out.println(solution(input));
+        for (int i = 0; i < n; i++) {
+            String str = sc.next();
+            System.out.println(solution(str));
+        }
     }
 }
