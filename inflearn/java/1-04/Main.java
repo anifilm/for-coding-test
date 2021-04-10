@@ -14,8 +14,8 @@ public class Main {
         int n = sc.nextInt();
 
         for (int i = 0; i < n; i++) {
-            String str = sc.next();
-            System.out.println(solution(str));
+            String input = sc.next();
+            System.out.println(solution(input));
         }
     }
 }

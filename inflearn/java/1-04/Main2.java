@@ -14,11 +14,11 @@ public class Main2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        String[] str = new String[n];
+        String[] input = new String[n];
         for (int i = 0; i < n; i++)
-            str[i] = sc.next();
+            input[i] = sc.next();
 
-        for (String result : solution(n, str)) {
+        for (String result : solution(n, input)) {
             System.out.println(result);
         }
     }

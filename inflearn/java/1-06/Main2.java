@@ -1,12 +1,13 @@
 import java.util.*;
 
-public class Main {
+public class Main2 {
     public static String solution(String str) {
-        ArrayList<Character> answer = new ArrayList<>();
-        for (char s : str.toCharArray()) {
-            if (!answer.contains(s)) answer.add(s);
+        String answer = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (i == str.indexOf(str.charAt(i)))
+                answer += str.charAt(i);
         }
-        return answer.toString().replaceAll("[,\\s\\[\\]]", "");
+        return answer;
     }
 
     public static void main(String[] args) {

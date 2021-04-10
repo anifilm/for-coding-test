@@ -23,9 +23,9 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String str = sc.next();
+        String input = sc.next();
 
-        System.out.println(solution(str));
+        System.out.println(solution(input));
     }
 }
 

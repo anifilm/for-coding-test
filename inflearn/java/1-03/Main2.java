@@ -21,8 +21,8 @@ public class Main2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
+        String input = sc.nextLine(); // 공백 포함한 문자열 입력
 
-        System.out.println(solution(str));
+        System.out.println(solution(input));
     }
 }

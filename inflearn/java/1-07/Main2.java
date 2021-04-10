@@ -1,15 +1,11 @@
 import java.util.*;
 
-public class Main {
+public class Main2 {
     public static String solution(String str) {
         String answer = "YES";
-        int len = str.length();
-        for (int i = 0; i < len / 2; i++) {
-            if (str.toLowerCase().charAt(i) != str.toLowerCase().charAt(len - 1 - i)) {
-                answer = "NO";
-                break;
-            }
-        }
+        String revStr = new StringBuilder(str).reverse().toString();
+        // 뒤집어진 문자열과 문자열 바로 비교
+        if (!str.equalsIgnoreCase(revStr)) answer = "NO";
         return answer;
     }
 
