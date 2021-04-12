@@ -12,4 +12,4 @@ def selectionSort(x):
 
 x = [5, 2, 8, 6, 1, 9, 3, 7]
 selectionSort(x)
-print(x)    # 결과는 당연히 1, 2, 3, 5, 6, 7, 8, 9로 나온다.
+print(x)  # 결과는 당연히 1, 2, 3, 5, 6, 7, 8, 9로 나온다.

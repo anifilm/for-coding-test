@@ -1,4 +1,3 @@
-import static java.lang.System.out;
 import java.util.Arrays;
 
 public class RadixSort {
@@ -6,7 +5,7 @@ public class RadixSort {
 
 		int[] array = {12, 326, 127, 467, 110, 58};
 		array = rSort(array);
-		out.print(Arrays.toString(array));
+		System.out.print(Arrays.toString(array));
 		// 결과는 12, 58, 110, 127, 326, 467로 나온다
 	}
 

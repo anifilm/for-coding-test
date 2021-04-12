@@ -1,4 +1,3 @@
-import static java.lang.System.out;
 import java.util.Arrays;
 
 public class SelectionSort {
@@ -8,7 +7,7 @@ public class SelectionSort {
 		int size = 6;
 
 		array = SelectionSort(array, size);
-		out.print(Arrays.toString(array));
+		System.out.print(Arrays.toString(array));
 	}
 
 	public static int[] SelectionSort(int arr[], int MAX) {
