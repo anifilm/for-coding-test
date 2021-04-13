@@ -6,7 +6,6 @@ def reverseString(s):
     return s
 
 
-
 if __name__ == "__main__":
     print('Example:')
-    print(reverseString(['h','e','l','l','o']))
+    print(reverseString(['h', 'e', 'l', 'l', 'o']))
