@@ -18,7 +18,7 @@ LinkedHashSet<String> linkedHashSet = new LinkedHashSet<>();
 
 TreeSet<String> treeSet = new TreeSet<>();
 
-for(String data : dataList){
+for (String data : dataList) {
     hashSet.add(data);
     linkedHashSet.add(data);
     treeSet.add(data);
