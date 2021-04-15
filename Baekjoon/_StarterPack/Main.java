@@ -11,5 +11,6 @@ public class Main {
         int input1 = sc.nextInt();
         int input2 = sc.nextInt();
         System.out.println(solution(input1, input2));
+        sc.close();
     }
 }

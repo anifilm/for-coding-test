@@ -1,18 +1,12 @@
-const readline = require("readline");
-const rl = readline.createInterface({
-    input: process.stdin, output: process.stdout
-    });
-rl.on("line", function(line) {
-    plusCycle(line);
-    rl.close();
-    })
-    .on("close", function() {
-    process.exit();
-});
+const fs = require('fs');
+const input = fs.readFileSync('/dev/stdin').toString();
+let n = parseInt(input);
+
+plusCycle(n);
 
 function plusCycle(n) {
-    var check = n;
-    var count = 1;
+    let check = n;
+    let count = 1;
     while (1) {
         n = calCycle(n);
         if (check == n) break;
@@ -22,9 +16,9 @@ function plusCycle(n) {
 }
 
 function calCycle(n) {
-    var b1 = n % 10;
+    let b1 = n % 10;
     n /= 10;
-    var b2 = Math.floor(n) % 10;
+    let b2 = Math.floor(n) % 10;
     if (b1 + b2 >= 10)
         return (b1 * 10) + ((b1 + b2) % 10);
     else
