@@ -1,24 +1,15 @@
-const readline = require("readline");
-const rl = readline.createInterface({
-    input: process.stdin, output: process.stdout
-    });
-rl.on("line", function(line) {
-    print_star(line);
-    rl.close();
-    })
-    .on("close", function() {
-    process.exit();
-});
+// 리눅스 node.js 콘솔 입력 완료는 EOF(ctrl+d) 이다.
+const fs = require('fs');
+const input = fs.readFileSync('/dev/stdin').toString();
+let n = parseInt(input);
 
-function print_star(x) {
-    for (var i = 0; i < x; i++) {
-        var string = "";
-        for (var j = x - 1; j > i; j--) {
-            string += " ";
-        }
-        for (var j = 0; j <= i; j++) {
-            string += "*";
-        }
-        console.log(string);
+for (let i = 0; i < n; i++) {
+    let star = '';
+    for (let j = n - 1; j > i; j--) {
+        star += ' ';
     }
+    for (let k = 0; k <= i; k++) {
+        star += '*';
+    }
+    console.log(star);
 }

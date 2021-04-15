@@ -1,16 +1,9 @@
-const readline = require("readline");
-const rl = readline.createInterface({
-  input: process.stdin, output: process.stdout
-  });
-rl.on("line", function(line) {
-  gugudan(line);
-  rl.close();
-  })
-  .on("close", function() {
-  process.exit();
-});
+// 리눅스 node.js 콘솔 입력 완료는 EOF(ctrl+d) 이다.
+const fs = require('fs');
+const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+let a = parseInt(input[0]);
+let b = parseInt(input[1]);
 
-function gugudan(x) {
-  for (var i = 1; i <= 9; i++)
-    console.log(`${x} * ${i} = ${x * i}`);
+for (let i = 1; i <= 9; i++) {
+  console.log(`${n} * ${i} = ${n * i}`);
 }

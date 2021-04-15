@@ -1,10 +1,9 @@
 import 'dart:io';
 
 void main() {
-  String sc = stdin.readLineSync().toString();
-  List<String> ss = sc.split(' ');
-  int hour = int.parse(ss[0]);
-  int min = int.parse(ss[1]);
+  List<String> sc = stdin.readLineSync().toString().split(' ');
+  int hour = int.parse(sc[0]);
+  int min = int.parse(sc[1]);
 
   if (min < 45) {
     if (hour == 0) {
