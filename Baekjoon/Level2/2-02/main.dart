@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  int score = int.parse(stdin.readLineSync().toString());
+  int score = int.parse(stdin.readLineSync()!);
 
   if (90 <= score && score <= 100) {
     print('A');

@@ -1,8 +1,8 @@
 import 'dart:io';
 
 void main() {
-  int a = int.parse(stdin.readLineSync().toString());
-  int b = int.parse(stdin.readLineSync().toString());
+  int a = int.parse(stdin.readLineSync()!);
+  int b = int.parse(stdin.readLineSync()!);
 
   if (0 < a && 0 < b)
     print(1);

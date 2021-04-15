@@ -1,7 +1,8 @@
 import 'dart:io';
 
 void main() {
-  List<String> sc = stdin.readLineSync().toString().split(' ');
+  List<String> sc = stdin.readLineSync()!.split(' ');
+  print(sc);
   int a = int.parse(sc[0]);
   int b = int.parse(sc[1]);
   int c = int.parse(sc[2]);

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  List<String> sc = stdin.readLineSync().toString().split(' ');
+  List<String> sc = stdin.readLineSync()!.split(' ');
   int hour = int.parse(sc[0]);
   int min = int.parse(sc[1]);
 
