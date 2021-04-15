@@ -1,8 +1,14 @@
 import 'dart:io';
 
+String solution(List<int> numbers) {
+  String answer = '';
+  return answer;
+}
+
 void main() {
-  List<String> sc = stdin.readLineSync()!.split(' ');
-  int a = int.parse(sc[0]);
-  int b = int.parse(sc[1]);
-  print(a + b);
+  var numbers = <int>[];
+  for (int i = 0; i < 9; i++) {
+    numbers.add(int.parse(stdin.readLineSync()!));
+  }
+  print(solution(numbers));
 }
