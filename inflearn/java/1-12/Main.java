@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Main {
-    public static String solution(String str, int n) {
+    public static String solution(int n, String str) {
         String answer = "";
         String binaryString = "";
         int len = n * 7;
@@ -26,6 +26,6 @@ public class Main {
         int n = sc.nextInt();
         String input = sc.next();
 
-        System.out.println(solution(input, n));
+        System.out.println(solution(n, input));
     }
 }
