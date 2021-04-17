@@ -1,4 +1,4 @@
-const ps = require('./modules/ps');
+const ps = require('../_modules/ps');
 
 const solution = (absolutes, signs) => {
   let answer = 0;
