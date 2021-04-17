@@ -16,7 +16,7 @@ int main() {
     int i, arr[N] = {0,};
     for (i = 1; i < N; i++) {
         int idx = selfNum(i);
-        if (idx <= N) {
+        if (idx < N) {
             arr[idx] = 1;
         }
     }
