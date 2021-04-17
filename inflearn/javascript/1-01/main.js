@@ -12,8 +12,8 @@ const solution = (input1, input2) => {
 };
 
 ps.main(async () => {
-  let input1 = await ps.readLine();
-  let input2 = await ps.readLine();
+  let input1 = await ps.readLine(); // 문자열 입력
+  let input2 = await ps.readLine(); // 문자열 입력
 
   console.log(solution(input1, input2));
 });
