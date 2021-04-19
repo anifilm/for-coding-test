@@ -2,15 +2,13 @@ import java.util.*;
 
 public class Main {
     public static boolean isPrime(int num) {
-        boolean result = true;
         if (num == 1) return false; // 1은 소수에서 제외
         for (int i = 2; i < num; i++) {
             if (num % i == 0) {
-                result = false;
-                break;
+                return false;
             }
         }
-        return result;
+        return true;
     }
 
     public static String solution(int n, String[] arr) {
