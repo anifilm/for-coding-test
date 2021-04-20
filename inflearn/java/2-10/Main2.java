@@ -1,27 +1,24 @@
 import java.util.*;
 
-public class Main {
+public class Main2 {
     public static int solution(int n, int[][] arr) {
         int answer = 0;
-        // 가로행,세로열 계산
-        int sum_r, sum_c;
+        int[] dx = {-1, 0, 1, 0};
+        int[] dy = {0, 1, 0, -1};
         for (int i = 0; i < n; i++) {
-            sum_r = sum_c = 0;
             for (int j = 0; j < n; j++) {
-                sum_r += arr[i][j];
-                sum_c += arr[j][i];
+                boolean flag = true;
+                for (int k = 0; k < 4; k++) {
+                    int nx = i + dx[k];
+                    int ny = j + dy[k];
+                    if (nx >= 0 && nx < n && ny >= 0 && ny < n && arr[nx][ny] >= arr[i][j]) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) answer++;
             }
-            if (answer < sum_r) answer = sum_r;
-            if (answer < sum_c) answer = sum_c;
         }
-        // 대각선 계산
-        int sum_c1 = 0, sum_c2=0;
-        for (int i = 0; i < n; i++) {
-            sum_c1 += arr[i][i];
-            sum_c2 += arr[n-1-i][i];
-        }
-        if (answer < sum_c1) answer = sum_c1;
-        if (answer < sum_c2) answer = sum_c2;
         return answer;
     }
 
