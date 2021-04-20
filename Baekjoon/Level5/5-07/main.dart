@@ -1,6 +1,6 @@
 import 'dart:io';
 
-String solution(List<List> inputs) {
+String solution(List inputs) {
   String answer = '';
   for (var scores in inputs) {
     int n = scores[0];
@@ -29,11 +29,12 @@ String solution(List<List> inputs) {
 
 void main() {
   int c = int.parse(stdin.readLineSync()!);
-  var inputs = <List>[];
+  var inputs = [];
   for (int i = 0; i < c; i++) {
     List<String> sc = stdin.readLineSync()!.split(' ');
     List<int> intList = sc.map(int.parse).toList();
     inputs.add(intList);
   }
+
   print(solution(inputs));
 }

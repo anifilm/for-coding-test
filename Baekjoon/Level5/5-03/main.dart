@@ -16,5 +16,6 @@ void main() {
   for (int i = 0; i < 3; i++) {
     numbers.add(int.parse(stdin.readLineSync()!));
   }
+
   print(solution(numbers));
 }

@@ -23,5 +23,6 @@ int solution(int n) {
 
 void main() {
   int n = int.parse(stdin.readLineSync()!);
+
   print(solution(n));
 }

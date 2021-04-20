@@ -19,5 +19,6 @@ void main() {
   for (int i = 0; i < n; i++) {
     numbers.add(int.parse(sc[i]));
   }
+
   print(solution(n, numbers));
 }
