@@ -18,5 +18,6 @@ public class Main3 {
         String input = sc.next();
 
         System.out.println(solution(input));
+        sc.close();
     }
 }

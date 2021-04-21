@@ -21,5 +21,6 @@ public class Main2 {
         String input = sc.next();
 
         System.out.println(solution(n, input));
+        sc.close();
     }
 }

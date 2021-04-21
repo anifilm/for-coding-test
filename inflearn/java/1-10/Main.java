@@ -23,5 +23,6 @@ public class Main {
         char t = sc.next().charAt(0);
 
         System.out.println(solution(s, t));
+        sc.close();
     }
 }

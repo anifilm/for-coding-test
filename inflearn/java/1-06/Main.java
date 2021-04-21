@@ -14,5 +14,6 @@ public class Main {
         String input = sc.next();
 
         System.out.println(solution(input));
+        sc.close();
     }
 }

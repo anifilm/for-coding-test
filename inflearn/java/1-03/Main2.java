@@ -24,5 +24,6 @@ public class Main2 {
         String input = sc.nextLine(); // 공백 포함한 문자열 입력
 
         System.out.println(solution(input));
+        sc.close();
     }
 }

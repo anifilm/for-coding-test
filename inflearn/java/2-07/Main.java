@@ -22,5 +22,6 @@ public class Main {
         String[] input = sc.nextLine().split(" ");
 
         System.out.println(solution(n, input));
+        sc.close();
     }
 }

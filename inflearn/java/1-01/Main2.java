@@ -18,5 +18,6 @@ public class Main2 {
         char input2 = sc.next().charAt(0);
 
         System.out.println(solution(input1, input2));
+        sc.close();
     }
 }

@@ -39,5 +39,6 @@ public class Main2 {
         }
 
         System.out.println(solution(n, arr));
+        sc.close();
     }
 }

@@ -20,5 +20,6 @@ public class Main {
         String input = sc.nextLine();
 
         System.out.println(solution(input));
+        sc.close();
     }
 }

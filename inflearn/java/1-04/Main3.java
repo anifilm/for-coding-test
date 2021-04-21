@@ -26,5 +26,6 @@ public class Main3 {
         for (String result : solution(n, input)) {
             System.out.println(result);
         }
+        sc.close();
     }
 }

@@ -24,5 +24,6 @@ public class Main {
         int n = sc.nextInt();
 
         System.out.println(solution(n));
+        sc.close();
     }
 }

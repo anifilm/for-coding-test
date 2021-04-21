@@ -31,5 +31,6 @@ public class Main2 {
         for (int i : solution(s, t)) {
             System.out.print(i + " ");
         }
+        sc.close();
     }
 }

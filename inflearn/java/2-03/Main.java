@@ -26,5 +26,6 @@ public class Main {
         String[] input2 = sc.nextLine().split(" ");
 
         System.out.println(solution(n, input1, input2));
+        sc.close();
     }
 }

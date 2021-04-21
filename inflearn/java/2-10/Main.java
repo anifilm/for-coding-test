@@ -38,5 +38,6 @@ public class Main {
         }
 
         System.out.println(solution(n, arr));
+        sc.close();
     }
 }
