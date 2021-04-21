@@ -10,6 +10,6 @@ int main() {
     if (cnt % 2 == 0)
         printf("%d/%d", cnt + n, 1 + (-n));
     else
-        printf("%d/%d", 1 + (-n), cnt +n);
+        printf("%d/%d", 1 + (-n), cnt + n);
     return 0;
 }
