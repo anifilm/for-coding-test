@@ -10,7 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int input1 = sc.nextInt();
         int input2 = sc.nextInt();
+
         System.out.println(solution(input1, input2));
-        sc.close();
     }
 }
