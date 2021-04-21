@@ -6,6 +6,7 @@ public class Main {
         for (char s : str.toCharArray()) {
             if (!answer.contains(s)) answer.add(s);
         }
+        // ArrayList의 요소를 문자열로 변경
         return answer.toString().replaceAll("[,\\s\\[\\]]", "");
     }
 

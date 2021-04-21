@@ -9,7 +9,7 @@ public class Main {
             sum = answer[i - 1] + answer[i];
             answer[i + 1] = sum;
         }
-        // int형 배열을 문자열(공백 구분)로 변환
+        // int형 배열을 문자열로 변경 (공백 구분)
         return Arrays.toString(answer).replaceAll("[^0-9 ]", "");
     }
 

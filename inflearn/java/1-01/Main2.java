@@ -5,7 +5,6 @@ public class Main2 {
         int answer = 0;
         str = str.toLowerCase();
         t = Character.toLowerCase(t);
-        // 향상된 for문 사용
         for (char s : str.toCharArray()) {
             if (s == t) answer++;
         }
