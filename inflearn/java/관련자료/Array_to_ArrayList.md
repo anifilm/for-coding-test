@@ -7,13 +7,13 @@ array[0] = "Test1";
 array[1] = "Test2";
 array[2] = "Test3";
 
-ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(array));
+List<String> arrayList = new ArrayList<>(Arrays.asList(array));
 
 
 # Collection.addAll() 사용, Arrays.asList() 메서드에 비해 성능면에서 이점 있음
 String[] array = {"john", "emma", "rick", "tim"};
 
-ArrayList<String> arrayList = new ArrayList<String>();
+List<String> arrayList = new ArrayList<String>();
 Collections.addAll(arrayList, array);
 
 
@@ -24,7 +24,7 @@ array[0] = "Test1";
 array[1] = "Test2";
 array[2] = "Test3";
 
-ArrayList<String> arrayList = new ArrayList<>();
+List<String> arrayList = new ArrayList<>();
 for (String temp : array) {
     arrayList.add(temp);
 }

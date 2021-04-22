@@ -1,7 +1,7 @@
 # 배열의 요소를 직접 확인하면 중복 제거
 
 String[] dataList = {"apple", "banana", "orange", "apple", "grape", "banana"};
-ArrayList<String> arrayList = new ArrayList<>();
+List<String> arrayList = new ArrayList<>();
 
 for (String data : dataList) {
     if (!arrayList.contains(data))

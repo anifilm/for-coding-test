@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main3 {
     public static ArrayList<String> solution(int n, String[] str) {
-        ArrayList<String> answer = new ArrayList<>();
+        List<String> answer = new ArrayList<>();
         for (String s : str) {
             char[] chr = s.toCharArray(); // 문자열을 char 배열로 변환
             int len = chr.length;

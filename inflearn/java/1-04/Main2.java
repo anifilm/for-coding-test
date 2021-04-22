@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main2 {
     public static ArrayList<String> solution(int n, String[] str) {
-        ArrayList<String> answer = new ArrayList<>();
+        List<String> answer = new ArrayList<>();
         for (String s : str) {
             // 스트링 빌더를 통한 문자열 뒤집기
             String tmp = new StringBuilder(s).reverse().toString();
