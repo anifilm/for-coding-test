@@ -1,25 +1,28 @@
 import java.util.*;
 
-public class Main {
+public class Main3 {
     public static String solution(int n, int m, int[] arr1, int[] arr2) {
-        int[] tmp = new int[n + m];
-        int idx = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                // 같은 요소를 찾아서 tmp 배열에 임시 저장
-                if (arr1[i] == arr2[j]) {
-                    tmp[idx++] = arr1[i];
+        List<Integer> answer = new ArrayList<>();
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        int p1 = 0, p2 = 0;
+        while (p1 < n && p2 < m) {
+            if (arr1[p1] == arr2[p2]) {
+                answer.add(arr1[p1]);
+                p1++;
+                p2++;
+            }
+            else {
+                if (arr1[p1] < arr2[p2]) {
+                    p1++;
+                }
+                else {
+                    p2++;
                 }
             }
         }
-        // 임시 저장된 배열 요소를 새 배열에 저장후 정렬
-        int[] answer = new int[idx];
-        for (int i = 0; i < idx; i++) {
-            answer[i] = tmp[i];
-        }
-        Arrays.sort(answer);
-        // int형 배열을 문자열로 변경 (공백 구분)
-        return Arrays.toString(answer).replaceAll("[^0-9 ]", "");
+        // ArrayList<Integer>의 요소를 문자열로 변경 (공백 구분)
+        return answer.toString().replaceAll("\\[|,|\\]", "");
     }
 
     public static void main(String[] args) {
@@ -48,6 +51,6 @@ public class Main {
 }
 
 /*
-Time Limit 1415ms (1000ms 제한)
-2중 for문 구조를 개선할 필요가 있다.
+Accepted 994ms (1000ms 제한)
+입력처리 부분의 시간복잡도 개선 필요
 */
