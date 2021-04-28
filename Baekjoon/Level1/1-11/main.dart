@@ -1,8 +1,7 @@
 import 'dart:io';
 
-void main() {
-  int a = int.parse(stdin.readLineSync()!);
-  int b = int.parse(stdin.readLineSync()!);
+String solution(int a, int b) {
+  String answer = '';
 
   int n, b1, b2, b3;
   n = b;
@@ -12,8 +11,16 @@ void main() {
   n ~/= 10;
   b3 = n % 10; // 백의 자리수
 
-  print(a * b1);
-  print(a * b2);
-  print(a * b3);
-  print(a * b);
+  answer += (a * b1).toString() + '\n';
+  answer += (a * b2).toString() + '\n';
+  answer += (a * b3).toString() + '\n';
+  answer += (a * b).toString() + '\n';
+  return answer;
+}
+
+void main() {
+  int a = int.parse(stdin.readLineSync()!);
+  int b = int.parse(stdin.readLineSync()!);
+
+  print(solution(a, b));
 }
