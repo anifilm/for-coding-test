@@ -1,10 +1,10 @@
 def solution(a, b) {
     String answer = ''
-    answer += (a + b) + "\n"
-    answer += (a - b) + "\n"
-    answer += (a * b) + "\n"
-    answer += (a / b).toInteger() + "\n"
-    answer += (a % b) + "\n"
+    answer += (a + b) + '\n'
+    answer += (a - b) + '\n'
+    answer += (a * b) + '\n'
+    answer += (a.intdiv(b)) + '\n' // 정수형 나눗셈
+    answer += (a % b) + '\n'
     return answer
 }
 

@@ -9,10 +9,10 @@ def solution(a, b) {
     n /= 10
     b3 = n % 10 // 백의 자리수
 
-    answer += (a * b1) + "\n"
-    answer += (a * b2) + "\n"
-    answer += (a * b3) + "\n"
-    answer += (a * b) + "\n"
+    answer += (a * b1) + '\n'
+    answer += (a * b2) + '\n'
+    answer += (a * b3) + '\n'
+    answer += (a * b) + '\n'
     return answer
 }
 

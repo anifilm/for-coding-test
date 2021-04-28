@@ -1,9 +1,9 @@
 def solution(a, b, c) {
     String answer = ''
-    answer += ((a + b) % c) + "\n"
-    answer += (((a % c) + (b % c)) % c) + "\n"
-    answer += ((a * b) % c) + "\n"
-    answer += (((a % c) * (b % b)) % b) + "\n"
+    answer += ((a + b) % c) + '\n'
+    answer += (((a % c) + (b % c)) % c) + '\n'
+    answer += ((a * b) % c) + '\n'
+    answer += (((a % c) * (b % b)) % b) + '\n'
     return answer
 }
 
