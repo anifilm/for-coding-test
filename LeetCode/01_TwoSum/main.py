@@ -1,7 +1,5 @@
 def twoSum(nums, target):
-
     for i in nums:
-
         n = target - i
 
         start_index = nums.index(i)
@@ -13,7 +11,7 @@ def twoSum(nums, target):
             print(nums, '->', target)
             print(i, '+', n, '=', target)
 
-            return(start_index, next_index + temp_nums.index(n))
+            return (start_index, next_index + temp_nums.index(n))
 
 
 if __name__ == "__main__":
