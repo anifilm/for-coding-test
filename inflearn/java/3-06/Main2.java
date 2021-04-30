@@ -1,19 +1,16 @@
 import java.util.*;
 
-public class Main {
+public class Main2 {
     public static int solution(int n, int k, int[] arr) {
         int answer = 0, cnt = 0, rt, lt = 0;
         for (rt = 0; rt < n; rt++) {
             if (arr[rt] == 0) cnt++;
-            if (cnt > k) {
-                if (answer < rt - lt) answer = rt - lt;
-            }
             while (cnt > k) {
                 if (arr[lt] == 0) cnt--;
                 lt++;
             }
+            answer = Math.max(answer, rt - lt + 1);
         }
-        if (answer < rt - lt) answer = rt - lt;
         return answer;
     }
 
