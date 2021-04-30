@@ -1,21 +1,18 @@
 import java.util.*;
 
-public class Main {
+public class Main2 {
     public static String solution(String str1, String str2) {
         String answer = "YES";
-        HashMap<Character, Integer> map1 = new HashMap<>();
+        HashMap<Character, Integer> map = new HashMap<>();
         for (char c : str1.toCharArray()) {
-            map1.put(c, map1.getOrDefault(c, 0) + 1);
+            map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        HashMap<Character, Integer> map2 = new HashMap<>();
         for (char c : str2.toCharArray()) {
-            map2.put(c, map2.getOrDefault(c, 0) + 1);
-        }
-        for (char c : map1.keySet()) {
-            if (map1.get(c) != map2.get(c)) {
+            if (!map.containsKey(c) || map.get(c) == 0) {
                 answer = "NO";
                 break;
             }
+            map.put(c, map.get(c) - 1);
         }
         return answer;
     }

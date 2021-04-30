@@ -1,14 +1,14 @@
 import java.util.*;
 
-public class Main {
+public class Main2 {
     public static int solution(int n, int m, int[] arr) {
-        int answer = 0;
-        for (int i = 0; i < n+1-m; i++) {
-            int sum = 0;
-            for (int j = 0; j < m; j++) {
-                sum += arr[i+j];
-            }
-            if (answer < sum) answer = sum;
+        int sum = 0;
+        for (int i = 0; i < m; i++)
+            sum += arr[i];
+        int answer = sum;
+        for (int i = m; i < n; i++) {
+            sum += (arr[i] - arr[i-m]);
+            answer = Math.max(answer, sum);
         }
         return answer;
     }

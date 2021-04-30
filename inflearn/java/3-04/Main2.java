@@ -1,14 +1,15 @@
 import java.util.*;
 
-public class Main {
+public class Main2 {
     public static int solution(int n, int m, int[] arr) {
-        int answer = 0;
-        for (int i = 0; i < n+1-m; i++) {
-            int sum = 0;
-            for (int j = 0; j < m; j++) {
-                sum += arr[i+j];
+        int answer = 0, sum = 0, lt = 0;
+        for (int rt = 0; rt < n; rt++) {
+            sum += arr[rt];
+            if (sum == m) answer++;
+            while (sum >= m) {
+                sum -= arr[lt++];
+                if (sum == m) answer++;
             }
-            if (answer < sum) answer = sum;
         }
         return answer;
     }

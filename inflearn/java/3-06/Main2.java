@@ -1,14 +1,15 @@
 import java.util.*;
 
-public class Main {
-    public static int solution(int n, int m, int[] arr) {
-        int answer = 0;
-        for (int i = 0; i < n+1-m; i++) {
-            int sum = 0;
-            for (int j = 0; j < m; j++) {
-                sum += arr[i+j];
+public class Main2 {
+    public static int solution(int n, int k, int[] arr) {
+        int answer = 0, cnt = 0, rt, lt = 0;
+        for (rt = 0; rt < n; rt++) {
+            if (arr[rt] == 0) cnt++;
+            while (cnt > k) {
+                if (arr[lt] == 0) cnt--;
+                lt++;
             }
-            if (answer < sum) answer = sum;
+            answer = Math.max(answer, rt - lt + 1);
         }
         return answer;
     }
@@ -17,7 +18,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String[] input1 = sc.nextLine().split(" ");
         int n = Integer.parseInt(input1[0]);
-        int m = Integer.parseInt(input1[1]);
+        int k = Integer.parseInt(input1[1]);
 
         String[] input2 = sc.nextLine().split(" ");
         int[] arr = new int[n];
@@ -26,7 +27,7 @@ public class Main {
             arr[i] = Integer.parseInt(input2[i]);
         }
 
-        System.out.println(solution(n, m, arr));
+        System.out.println(solution(n, k, arr));
         sc.close();
     }
 }
