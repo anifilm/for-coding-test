@@ -1,4 +1,4 @@
-5. 친구인가? (Disjoint-Set : Union&Find)
+6. 친구인가? (Disjoint-Set : Union&Find)
 
 
 설명
