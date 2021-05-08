@@ -15,6 +15,9 @@ lang_list = [
     #'Swift',
     'Dart',
     'Groovy',
+    'Scala',
+    'Clojure',
+    'Haskell'
 ]
 
 select = random.choice(lang_list)
