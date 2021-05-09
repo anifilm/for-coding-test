@@ -1,3 +1,5 @@
+-- 콘솔 입력 및 솔루션으로 재구성 필요
+
 -- Int Array
 intArray :: Int -> IO [Int]
 intArray 0 = return []
