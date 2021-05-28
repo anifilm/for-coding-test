@@ -16,6 +16,7 @@ public class Main2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         String[] input1 = sc.nextLine().split(" ");
         int n = Integer.parseInt(input1[0]);
         int k = Integer.parseInt(input1[1]);

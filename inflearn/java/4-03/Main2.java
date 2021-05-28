@@ -1,18 +1,22 @@
 import java.util.*;
 
-public class Main {
+public class Main2 {
     public static String solution(int n, int k, int[] arr) {
         String answer = "";
-        int cnt = 0;
-        HashSet<Integer> set = new HashSet<>();
-        // 시간초과가 되므로 Two Pointers Algorithm 적용 필요
-        for (int i = 0; i < n-k+1; i++) {
-            for (int j = i; j < i+k; j++) {
-                set.add(arr[j]);
+        HashMap<Integer, Integer> map = new HashMap<>();
+        // Two Pointers Algorithm 적용했지만 시간초과 발생!
+        for (int i = 0; i < k - 1; i++) {
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        }
+        int lt = 0;
+        for (int rt = k-1; rt < n; rt++) {
+            map.put(arr[rt], map.getOrDefault(arr[rt], 0) + 1);
+            answer += map.size() + " "; // 문자열 연산에서 시간초과 예상됨
+            map.put(arr[lt], map.get(arr[lt]) - 1);
+            if (map.get(arr[lt]) == 0) {
+                map.remove(arr[lt]);
             }
-            cnt = set.size();
-            answer += cnt + " ";
-            set.clear();
+            lt++;
         }
         return answer;
     }
