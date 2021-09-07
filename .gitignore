@@ -1,5 +1,4 @@
-.DS_Store
-.vscode
+.vscode/
 node_modules/
 package-lock.json
 vendor/
@@ -10,9 +9,12 @@ target/
 __using_assets__/
 __new__/
 lecture/
+.env
 *.exe
 *.o
 *.gch
 *.pdb
 *.class
 test.*
+
+.DS_Store
