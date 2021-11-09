@@ -9,11 +9,11 @@ __using_assets__/
 __new__/
 lecture/
 .env
-*.exe
 *.o
 *.gch
 *.pdb
 *.class
+*.exe
 test.*
 
 .DS_Store
