@@ -77,7 +77,7 @@ class LinkedListBasic:
     def count(self, x) -> int:
         cnt = 0
         curr = self.__head.next  # 0번 노드
-        while curr != None:
+        while curr is not None:  # curr != None
             if curr.item == x:
                 cnt += 1
             curr = curr.next
