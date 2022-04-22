@@ -1,7 +1,5 @@
 def house(plan):
     list_string = [l for l in plan.split('\n') if len(l) > 0]
-    print(list_string)
-
     lines_index = []
     hash_index = []
     height, width = 0, 0
@@ -15,7 +13,6 @@ def house(plan):
             height = max(lines_index) - min(lines_index) + 1
             width = max(hash_index) - min(hash_index) + 1
 
-    print(width, height)
     return width * height
 
 
