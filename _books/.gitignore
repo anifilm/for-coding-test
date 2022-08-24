@@ -11,3 +11,11 @@ share/
 
 .env
 *.pdf
+
+Debug/
+a.out
+
+*.o
+*.gch
+*.exe
+*.pdf
