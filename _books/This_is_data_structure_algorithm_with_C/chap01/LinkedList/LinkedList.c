@@ -61,7 +61,7 @@ void SLL_RemoveNode(Node** Head, Node* Remove) {
 Node* SLL_GetNodeAt(Node* Head, int Location) {
     Node* Current = Head;
 
-    while (Current != NULL & (--Location) >= 0) {
+    while (Current != NULL && (--Location) >= 0) {
         Current = Current->NextNode;
     }
 

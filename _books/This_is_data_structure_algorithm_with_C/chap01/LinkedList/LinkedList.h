@@ -11,7 +11,6 @@ typedef struct tagNode {
     struct tagNode* NextNode;
 } Node;
 
-
 Node* SLL_CreateNode(ElementType NewData);
 void SLL_DestroyNode(Node* Node);
 void SLL_AppendNode(Node** Head, Node* NewNode);
