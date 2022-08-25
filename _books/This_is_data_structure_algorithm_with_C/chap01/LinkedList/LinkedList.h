@@ -19,5 +19,8 @@ void SLL_InsertNewHead(Node** Head, Node* NewHead);
 void SLL_RemoveNode(Node** Head, Node* Remove);
 Node* SLL_GetNodeAt(Node* Head, int Location);
 int SLL_GetNodeCount(Node* Head);
+// VITAMIN QUIZ 1-2
+void SLL_InsertBefore(Node** Head, Node* Current, Node* NewNode);
+void SLL_DestroyAllNodes(Node** List);
 
 #endif

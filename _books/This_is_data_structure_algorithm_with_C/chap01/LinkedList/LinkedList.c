@@ -79,3 +79,33 @@ int SLL_GetNodeCount(Node* Head) {
 
     return Count;
 };
+
+// VITAMIN QUIZ 1-2
+void SLL_InsertBefore(Node** Head, Node* Current, Node* NewNode) {
+    // 이전 노드 찾기
+    Node* PrevNode = (*Head);
+    while (PrevNode != NULL && PrevNode->NextNode != Current) {
+        PrevNode = PrevNode->NextNode;
+    }
+    // 노드 연결 (PrevNode -> NewNode -> Current)
+    PrevNode->NextNode = NewNode;
+    NewNode->NextNode = Current;
+}
+
+void SLL_DestroyAllNodes(Node** List) {
+    int i = 0;
+    int Count = 0;
+    Node* Current = NULL;
+    // 모든 노드를 메모리에서 제거
+    printf("\nDestroying List...\n");
+
+    Count = SLL_GetNodeCount((*List));
+    for (i = 0; i < Count; i++) {
+        Current = SLL_GetNodeAt((*List), 0);
+
+        if (Current != NULL) {
+            SLL_RemoveNode(List, Current);
+            SLL_DestroyNode(Current);
+        }
+    }
+}
