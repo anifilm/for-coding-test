@@ -34,6 +34,14 @@ int main() {
         printf("List[%d] : %d\n", i, Current->Data);
     }
 
+    printf("\n");
+    Current = DLL_GetNodeAt(List, 3);
+    PrintNode(Current);
+
+    printf("\n");
+    // VITAMIN QUIZ 1-3
+    PrintReverse(List);
+
     //  모든 노드를 메모리에서 제거
     printf("\nDestroying List...\n");
 

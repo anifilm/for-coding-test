@@ -88,14 +88,15 @@ int DLL_GetNodeCount(Node* Head) {
     return Count;
 }
 
-/*
 void PrintNode(Node* Node) {
+    // 선택된 노드의 이전, 현재, 다음 값을 출력
     if (Node->PrevNode == NULL) {
-        printf("Prev: NULL");
+        printf("Prev: NULL\n");
     }
     else {
         printf("Prev: %d\n", Node->PrevNode->Data);
     }
+
     printf("Current: %d\n", Node->Data);
 
     if (Node->NextNode == NULL) {
@@ -105,4 +106,23 @@ void PrintNode(Node* Node) {
         printf("Next: %d\n", Node->NextNode->Data);
     }
 }
-*/
+
+// VITAMIN QUIZ 1-3
+// 리스트를 역순으로 출력
+void PrintReverse(Node* Head) {
+    int Count = 0;
+    Node* Current = Head;
+
+    // 마지막 노드로 이동
+    while (Current->NextNode != NULL) {
+        Current = Current->NextNode;
+        Count++;
+    }
+
+    while (Current != NULL) {
+        // 값 출력후 이전 노드로 이동
+        printf("List[%d] : %d\n", Count, Current->Data);
+        Current = Current->PrevNode;
+        Count--;
+    }
+}

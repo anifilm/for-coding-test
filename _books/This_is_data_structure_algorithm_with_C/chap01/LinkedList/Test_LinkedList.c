@@ -66,7 +66,6 @@ int main() {
             SLL_DestroyNode(Current);
         }
     }*/
-
     SLL_DestroyAllNodes(&List);
 
     return 0;
