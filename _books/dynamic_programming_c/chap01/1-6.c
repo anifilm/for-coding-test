@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 void towerOfHanoi(char s, char d, char e, int n) {
-    if (n <= 0)     // 종료 조건
-        return;
+    if (n <= 0) return; // 종료 조건
     towerOfHanoi(s, e, d, n - 1);
     printf("%d번 원반을 %c 기둥에서 %c 기둥으로 옮깁니다.\n", n, s, d);
     towerOfHanoi(e, d, s, n - 1);
