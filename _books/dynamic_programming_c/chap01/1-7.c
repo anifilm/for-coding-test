@@ -25,7 +25,7 @@ void traverse2(Node* head) {
 
 int main() {
 
-    Node *head;
+    Node* head;
 
     Node* l1 = (Node*)malloc(sizeof(Node));
     Node* l2 = (Node*)malloc(sizeof(Node));
