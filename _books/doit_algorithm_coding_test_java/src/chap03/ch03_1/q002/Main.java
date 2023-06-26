@@ -1,8 +1,8 @@
-package chap03.ch03_1;
+package chap03.ch03_1.q002;
 
 import java.util.*;
 
-public class Main2 {
+public class Main {
     public static double solution(int N, int[] A) {
         long sum = 0;
         long max = 0;

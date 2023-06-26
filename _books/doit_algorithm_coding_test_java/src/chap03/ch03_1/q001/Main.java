@@ -1,4 +1,4 @@
-package chap03.ch03_1;
+package chap03.ch03_1.q001;
 
 import java.util.*;
 
