@@ -10,9 +10,6 @@ typedef struct _NODE {
 NODE *head, *end, *temp;
 NODE *temp1, *temp2, *temp3, *temp4;
 
-void Initialize(void);
-void InsertNode(NODE*);
-
 void Initialize(void) {
     NODE* ptr;
     head = (NODE*)malloc(sizeof(NODE));
